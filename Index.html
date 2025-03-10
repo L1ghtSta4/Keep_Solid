@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Приклад роботи 25 уроку</title>
+    <style>
+
+        body {
+            background-image: url("images/фон_Index.jpg");
+            background-size: cover;
+            background-position: center 10%;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            width: 80%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        .section {
+            width: 100%;
+            height: 100vh; /* Кожна секція займає висоту екрану */
+            background-repeat: no-repeat;
+            background-size: cover; /* Картинка покриває весь простір */
+            position: relative; /* Необхідно для точного позиціонування кнопки */
+            display: flex;
+            flex-direction: column; /* Елементи розташовуються вертикально */
+            align-items: center; /* Центрування по горизонталі */
+            justify-content: center; /* Центрування по вертикалі */
+            text-align: center;
+        }
+
+        .first {
+            background-color: #988f8f;
+            background-image: url("images/герої_Усі.jpg");
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .second {
+            background-color: #988f8f;
+            background-image: url("images/мапа_Дота.png");
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .third {
+            background-color: #988f8f;
+            background-image: url("images/Вальве_лого.jpg");
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .forth {
+            .custom-form {
+                width: 100%;
+                max-width: 350px; /* Ширина формы */
+                margin: 50px auto; /* Центрирование */
+                padding: 20px;
+                background-image: url("images/фон_Форма.jpg");
+                /* Фон формы */
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 10px; /* Закругление углов */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+                text-align: center;
+            }
+
+            .custom-form h2 {
+                margin-bottom: 20px;
+                font-size: 24px;
+                color: #ff0000;
+            }
+
+            .custom-form label {
+                display: block;
+                text-align: left;
+                font-weight: bold;
+                margin: 10px 0 5px;
+                color: #fb0000;
+            }
+
+            .custom-form input {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 15px;
+            }
+
+            .custom-form button {
+                width: 100%;
+                padding: 10px;
+                background: #4CAF50;
+                color: white;
+                font-size: 18px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background 0.3s ease;
+            }
+
+            .custom-form button:hover {
+                background: #45a049;
+            }
+        }
+
+        /* Увеличиваем заголовок во 2-й секции */
+        .second h1 {
+            font-size: 36px; /* Делаем текст крупнее */
+            margin-bottom: 40px; /* Отступ перед кнопкой */
+        }
+
+        .cta-button {
+            background-color: red;
+            color: black;
+            padding: 20px 32px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            font-size: 22px; /* Увеличиваем размер шрифта */
+            font-weight: bold; /* Делаем текст жирным (опционально) */
+            line-height: 1.6; /* Увеличиваем межстрочный интервал для удобства чтения */
+            text-align: center; /* Центрируем текст */
+            color: white; /* Делаем текст белым, чтобы он выделялся на фоне */
+        }
+
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Расстояние между кнопками */
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Расстояние между точкой и текстом */
+            font-size: 20px; /* Увеличенный размер текста */
+            color: white; /* Цвет текста */
+        }
+
+        .radio-group input[type="radio"] {
+            width: 18px;
+            height: 18px;
+            accent-color: red; /* Красный цвет для радиокнопок */
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .p1 {
+            font-size: 22px; /* Увеличиваем размер шрифта */
+            font-weight: bold; /* Делаем текст жирным (опционально) */
+            line-height: 1.6; /* Увеличиваем межстрочный интервал для удобства чтения */
+            text-align: center; /* Центрируем текст */
+            color: #ff0000; /* Делаем текст белым, чтобы он выделялся на фоне */
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+<h1>Dota 2</h1>
+<p>Щодня мільйони гравців по всьому
+    світу
+    вступають у командну битву 5 на 5 у ролі
+    одного з понад сотні героїв. Dota -
+    найглибша розрахована на багато користувачів стратегія
+    всіх часів, в яких завжди знайдеться місце
+    нової стратегії чи тактиці. Вона зовсім
+    безкоштовна, і це не зміниться - починайте
+    захищати свого Стародавнього вже зараз.</p>
+
+<!-- Первая секция -->
+<div class="section first">
+    <h1>За якого героя ти будеш битися?</h1>
+    <a href="Heroes.html" class="cta-button">Обери
+        героя</a>
+</div>
+
+<!-- Вторая секция -->
+<div class="section second">
+    <h1>Дізнайся історію, причину зіткнення двох
+        Стародавніх</h1>
+    <a href="About_Lore.html" class="cta-button">Зазирни
+        сюди</a>
+</div>
+<div class="section third">
+    <h1>Дізнайся більше о компанії Valve</h1>
+    <a href="Valve.html" class="cta-button">Valve
+    </a>
+</div>
+<div class="section forth">
+    <h1>Розіграш аркани</h1>
+    <p>Відповіси у формі на питання ,щоб
+        отримати аркану</p>
+    <div class="custom-form">
+        <h2>Форма</h2>
+
+        <form>
+            <label for="username">Логін:</label>
+            <input type="text" id="username"
+                   name="username"
+                   placeholder="Введите логин"
+                   required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password"
+                   name="password"
+                   placeholder="Введите пароль"
+                   required>
+
+            <div class="p1"> Ваш
+                улюбленый тип
+                персонажей:
+            </div>
+
+            <div class="radio-group">
+                <label for="strength">
+                    <input type="radio"
+                           id="strength"
+                           name="category"
+                           value="strength">
+                    Сила
+                </label>
+
+                <label for="agility">
+                    <input type="radio"
+                           id="agility"
+                           name="category"
+                           value="agility">
+                    Спритність
+                </label>
+
+                <label for="intellect">
+                    <input type="radio"
+                           id="intellect"
+                           name="category"
+                           value="intellect">
+                    Інтелект
+                </label>
+
+                <label for="universal">
+                    <input type="radio"
+                           id="universal"
+                           name="category"
+                           value="universal">
+                    Універсал
+                </label>
+            </div>
+            <label for="name">Напишіть
+                вашого улюбленного
+                персонажа:</label>
+            <input type="text" id="name"
+                   name="name"
+                   placeholder="Введите имя"
+                   required>
+
+
+            <button type="submit">Надіслати
+            </button>
+        </form>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>
